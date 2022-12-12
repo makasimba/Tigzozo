@@ -1,0 +1,520 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "poppins regular" Arial, Helvetica;
+}
+
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+}
+
+.dark-theme {
+  background-color: black;
+  color: white;
+  --primary-color: white;
+}
+
+section {
+  font-family: "poppins regular";
+  padding: 2em 0em;
+  height: auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+header .container nav ul {
+  display: none;
+  align-items: center;
+  font-size: 20px;
+  justify-content: space-between;
+}
+header .container nav ul a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: "poppins regular";
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+header .container nav ul a:hover {
+  color: rgb(136, 0, 150);
+  border-bottom: 3px solid rgb(189, 131, 195);
+  transition: all 0.15s ease;
+}
+header .container nav ul li {
+  padding: 0 1em;
+}
+header .container .theme-img {
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+header .container img:hover {
+  cursor: pointer;
+}
+
+button {
+  height: 3em;
+  width: 10em;
+  border-style: solid;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.purple-button {
+  color: white;
+  background-color: #880096;
+}
+
+.purple-button:hover {
+  color: rgb(136, 0, 156);
+  background-color: white;
+  border: 3px solid rgb(136, 0, 156);
+}
+
+.banner .col-lg-4 h1 {
+  font-size: 2em;
+  line-height: 1em;
+}
+.banner .col-lg-4 p {
+  padding-top: 1em;
+  line-height: 1.5em;
+}
+.banner .col-lg-4 .buttons {
+  padding-top: 1em;
+  display: flex;
+}
+.banner .col-lg-4 .buttons #white-button {
+  background-color: white;
+  color: black;
+  border-width: 0.3em 0.5em;
+  border-color: rgb(136, 0, 150);
+  margin-left: 2em;
+}
+.banner .col-lg-4 .buttons #white-button:hover {
+  color: rgb(136, 0, 156);
+  border-width: 0.2em;
+}
+.banner .col-lg-4 .boxes {
+  padding-top: 1em;
+}
+.banner .col-lg-4 .boxes .box {
+  padding-top: 0.5em;
+  display: flex;
+}
+.banner .col-lg-4 .boxes .box p {
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  letter-spacing: 0.05em;
+}
+.banner .col-lg-4 .boxes .box p:hover {
+  color: rgb(136, 0, 150);
+  cursor: pointer;
+}
+.banner .col-lg-4 .boxes .box img:hover {
+  cursor: pointer;
+}
+.banner .col-md-3 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  padding-bottom: 1.8em;
+  font-weight: 1800;
+}
+
+.about p {
+  font-size: 1em;
+  line-height: 1em;
+  letter-spacing: 0.02em;
+  word-spacing: 0.1em;
+  font-size: 1.1em;
+  width: 26em;
+}
+.about .container p {
+  width: 100%;
+}
+.about .images {
+  display: flex;
+  padding-top: 1.5em;
+}
+.about .images .img1, .about .images .img2 {
+  width: 20%;
+}
+.about .images .img-2 {
+  margin-top: 3em;
+}
+.about button {
+  margin-top: 1em;
+  background-color: rgb(136, 0, 150);
+  height: 3em;
+  width: 10em;
+  color: white;
+  border: none;
+}
+.about .video {
+  width: 100%;
+  height: auto;
+}
+.about .video-info {
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.services .col-md-4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.services .col-md-4 h3 {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 2em;
+  color: white;
+  font-size: 1.5em;
+}
+.services .col-md-4 .overlay {
+  opacity: 0;
+  position: absolute;
+  background-color: rgb(136, 0, 150);
+  color: white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
+  cursor: pointer;
+}
+.services .col-md-4 .overlay h4 {
+  font-size: 1.3em;
+  padding: 1em 0em;
+  margin-right: 8em;
+}
+.services .col-md-4 .overlay h4:hover {
+  text-decoration: underline;
+}
+.services .col-md-4 .overlay img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.services .col-md-4 .overlay ol {
+  list-style-type: numeric;
+  font-size: 1.2em;
+  line-height: 2.5em;
+}
+.services .col-md-4 .overlay ol li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.services .col-md-4 .overlay:hover {
+  opacity: 1;
+  transition: all 0.7s ease;
+}
+.services .col-md-4 .img-arrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.testimonials h3, .testimonials h4 {
+  padding: 0.25em 0;
+  font-weight: bolder;
+  font-size: 1.2em;
+  letter-spacing: 0.07em;
+}
+.testimonials h4 {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+.testimonials p {
+  font-size: 0.5em;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  word-spacing: 0.1em;
+  font-size: 1.1em;
+  width: 100%;
+  font-weight: 100;
+}
+.testimonials .col-md-6 {
+  padding-top: 1em;
+}
+
+.gram .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gram .heading {
+  width: 100%;
+}
+.gram .col-md-4 {
+  text-align: center;
+}
+.gram p {
+  font-size: 1.5em;
+  padding-top: 1em;
+}
+.gram #follow-button {
+  background-color: rgb(136, 0, 150);
+  color: white;
+  border: none;
+  font-size: 1em;
+  height: 2.5em;
+  width: 6em;
+  margin-top: 2em;
+}
+.gram #follow-button:hover {
+  background-color: white;
+  color: rgb(136, 0, 156);
+  border: 3px solid rgb(136, 0, 156);
+  transition: all 0.3s ease;
+}
+
+footer {
+  background-color: rgb(136, 0, 156);
+  color: white;
+  line-height: 1.5em;
+  font-weight: bold;
+  font-family: "poppins regular";
+}
+footer .container {
+  padding: 1em 0em;
+}
+footer .container a {
+  text-decoration: none;
+  color: white;
+}
+footer .container .col-md-3 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 7em;
+}
+footer p {
+  margin-top: 1em;
+}
+footer .tigzozo-logo {
+  width: 30%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+footer .rights {
+  padding-right: 1em;
+  line-height: 0.5em;
+}
+footer #address {
+  line-height: 1em;
+  margin-top: 1em;
+}
+footer .social-icons {
+  width: 15%;
+  height: auto;
+  padding: 1em 0px;
+}
+footer h3 {
+  font-size: 1.2em;
+}
+footer h3 a {
+  border-bottom: 3px solid white;
+}
+footer img:hover {
+  cursor: pointer;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  footer .col-md-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 1em;
+  }
+  #space-between {
+    height: 6em;
+  }
+  .rights {
+    padding-left: 1em;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    margin-top: 3em;
+  }
+  header nav ul {
+    display: flex;
+  }
+  .col-lg-2:nth-child(even) {
+    padding-top: 3em;
+  }
+  #space-between {
+    height: 6em;
+  }
+  footer .col-md-3 {
+    display: flex;
+    margin-bottom: 1em;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
