@@ -161,47 +161,21 @@ section {
     height: auto;
 }
 
-header .container {
+header {
 
-    display: flex;
-    justify-content: space-between;
-
-    nav ul {
-        display: none;
-        align-items: center;
-        font-size: 20px;
-        justify-content: space-between;
-
-        a {
-            text-decoration: none;
-            color: var(--primary-color);
-            font-family: $regular;
-            font-size: 1em;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-        }
-
-        a:hover {
-            color:rgb(136, 0, 150);
-            border-bottom: 3px solid rgb(189, 131, 195);
-            transition: all 0.15s ease;
-        }
-
-        li {
-            padding: 0 1em;
-        }
-    }
-
-    .theme-img {
+    .container {
+    
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        width: 10%;
-    }
+        padding: 1em 0;
 
-    img:hover {
-        cursor: pointer;
+        nav {
+            display: none;
+        }
     }
 }
+
 
 button {
     height: 3em;
@@ -214,6 +188,7 @@ button {
 .purple-button {
     color: white;
     background-color: #880096;
+    border:none;
 }
 
 .purple-button:hover {
@@ -336,14 +311,8 @@ h2 {
         border: none;
     }
 
-    .video {
-        width: 100%;
-        height: auto;
-    }
-
     .video-info {
-        margin-left: 1em;
-        margin-top: 1em;
+        margin: 1em 0  0 1em;
     }
 }
 
@@ -458,6 +427,7 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .heading {
@@ -503,15 +473,18 @@ footer {
     
         padding: 1em 0em;
 
-        a {
-            text-decoration: none;
-            color: white;
-        }
+        .row {
 
-        .col-md-3 {
-            display: flex;
-            flex-direction: column;
-            margin: 0 7em;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            
+            .col-md-3 {
+                display: flex;
+                flex-direction: column;
+                margin: 0 7em;
+            }
         }
 
     }
@@ -574,58 +547,173 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 568px) {
-}
+@media (min-width: 568px) {}
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
 
-    // More responsiveness required here
+    header {
     
-    footer .col-md-3 {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        margin-bottom: 1em;
+        .container {
+
+            #logo-image {
+                width: 10%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            #theme-image {
+                width: 3%;
+                margin-right: 12em;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            nav {
+
+                display: block;
+                display: flex;
+                justify-content: space-between;
+                margin-left: 5em;
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    justify-content: space-between;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--primary-color);
+                        font-family: $regular;
+                        font-size: 0.8em;
+                        font-weight: 700;
+                        letter-spacing: 0.07em;
+                    }
+
+                    a:hover {
+                        color: rgb(136, 0, 150);
+                        border-bottom: 3px solid rgb(189, 131, 195);
+                        transition: all 0.2s ease;
+                    }
+
+                    li {
+                        padding-right: 1em;
+                    }
+                }
+            }
+        }
     }
 
-    #space-between {
-        height: 6em;
+    .about {
+
+        .images {
+            
+            .img-2 {
+                padding-top: 0.7em;
+            }
+        }
+
     }
 
     .rights {
         padding-left: 1em;
     }
-
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-    // More responsiveness required here
+    header {
 
-    .col-lg-4 {
-        margin-top: 3em;
+        .container {
+
+            #logo-image {
+                width: 10%;
+                img {
+                    width: 100%;
+                }
+            }
+            
+            #theme-image {
+                width: 3%;
+                margin-right: 12em;
+                img {
+                    width: 100%;
+                }
+            }
+        
+            nav {
+        
+                display: block;
+                display: flex;
+                justify-content: space-between;
+                margin-left: 5em;
+        
+                ul {
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    justify-content: space-between;
+        
+                    a {
+                        text-decoration: none;
+                        color: var(--primary-color);
+                        font-family: $regular;
+                        font-size: 1em;
+                        font-weight: 700;
+                        letter-spacing: 0.07em;
+                    }
+        
+                    a:hover {
+                        color: rgb(136, 0, 150);
+                        border-bottom: 3px solid rgb(189, 131, 195);
+                        transition: all 0.2s ease;
+                    }
+        
+                    li {
+                        padding-right: 1em;
+                    }
+                }
+            }
+        }
     }
 
-    header nav {
-        ul {
-            display: flex;
+    .about {
+
+        .images {
+
+            .img-2 {
+                padding-top: 6em;
+            }
         }
+
+    }
+    
+    .col-lg-4 {
+        margin-top: 3em;
     }
 
     .col-lg-2:nth-child(even) {
         padding-top: 3em;
     }
 
-    #space-between {
-        height: 6em;
+    .gram .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    footer .col-md-3 {
-        display: flex;
-        margin-bottom: 1em;
-    }
+    footer {
+
+        #space-between {
+                height: 6em;
+            }
+        }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
